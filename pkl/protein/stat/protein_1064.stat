@@ -1,0 +1,1 @@
+{'d_max': 7.0, 'd_min': 2.0, 'd': 4.0, 'node_num': 8, 'edge_num': 16, 'LCC': 8, 'wedge_count': 60.0, 'claw_count': 71.0, 'triangle_count': 12, 'square_count': 3, 'power_law_exp': 2.676536090306846, 'gini': -0.0078125, 'rel_edge_distr_entropy': 0.9553976137913982, 'assortativity': -0.5625, 'clustering_coefficient': 0.5070422535211268, 'n_components': 1, 'cpl': 1.4285714285714286}
