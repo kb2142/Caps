@@ -12,7 +12,7 @@ def main():
     model = CapsGNNTrainer(args)
     model.fit()
     # torch.save(model.model,'./pretrained_50.mod')
-    torch.save(model.model.state_dict(), './pretrained'+str(args.epochs)+'.mod')
+    # torch.save(model.model.state_dict(), './pretrained'+str(args.epochs)+'.mod')
     # model.model=torch.load('./pretrained_50.mod')
     model.score()
     model.save_predictions()

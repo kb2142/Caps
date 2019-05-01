@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 T="../dat/pkl/protein_nx2/json/"
 P="../dat/pkl/protein/json/"
-O=./output/protein.csv
-python src/train.py --epochs 10 --batch-size 60 --train-graph-folder $T --test-graph-folder $P \
-        --prediction-path $O --weight-decay 0.000001 --gcn-filters 2 --inner-attention-dimension 20 \
-        --capsule-dimensions 8 --learning-rate 0.001 --lambd 1
+O=./output/protein_$1.csv
+python src/train.py --epochs $1 --batch-size 8 --train-graph-folder $T --test-graph-folder $P --prediction-path $O
 # for i in 1 0.5 0.1 0.01 0.001 0.0001 0.00001
 #     do
 #         python src/train.py --epochs 10 --batch-size 60 --train-graph-folder $T --test-graph-folder $P \
